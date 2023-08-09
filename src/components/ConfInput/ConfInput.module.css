@@ -1,0 +1,36 @@
+.conf__input{
+    width: 100%;
+    position: relative;
+}
+
+
+.Change__input{
+    width: 100%;
+    position: relative;
+    background-color: #F3F3F4;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    margin: 30px auto;
+    padding-top: 15px;
+    padding-left: 10px;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #010E38 !important;
+
+}
+
+.Change__suptitle{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    opacity: 50%;
+    color: #010E38;
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    z-index: 2;
+}

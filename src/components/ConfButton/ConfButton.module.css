@@ -1,0 +1,24 @@
+
+.ConfButton{
+    
+        height: 60px;
+        width: 100%;
+        border-radius: 16px;
+        border: none;
+        background-color: #17975C;
+        color: #ffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        text-decoration: none;
+    
+    
+    
+    
+}
+
+.ConfButton span{
+    margin-left: 5px;
+    font-size: 17px;
+}

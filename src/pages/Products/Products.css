@@ -1,0 +1,49 @@
+/* Foods */
+.foods__container{
+    /* width: 90%; */
+    margin: 0 auto;
+}
+.foods__head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.foods__link:visited{
+color: inherit;
+}
+
+.food__sort{
+   
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    /* padding: 0px 10px; */
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFFBF;
+    height: 40px;
+    z-index: 999;
+    overflow-x:auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+     -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.food__sort::-webkit-scrollbar {
+    display: none;
+}
+
+.food__link{
+    display: inline-block;
+    padding: 7px 15px;
+    border-radius: 20px;
+    color: #616176;
+}
+
+.active{
+    background-color: #F1F1F6;
+    color: #0C0C1B;
+}

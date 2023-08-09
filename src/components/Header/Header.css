@@ -1,0 +1,51 @@
+.Header{
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.Header-row{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.Header__title{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 0px ;
+    text-transform: capitalize;
+    text-align: center;
+    width: 100%;
+}
+
+.Header__back{
+    text-decoration: none;
+    color: var(--tg-theme-text-color);
+    height: 24px;
+    width: 24px;
+    margin-bottom: 5px;
+}
+.Header__back:visited{
+    color: inherit;
+}
+
+.header-link{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+.header-col{
+    display: flex;
+    align-items: end;
+    cursor: pointer;
+    color: var(--tg-theme-text-color);
+    text-decoration: none;
+}
+.header-col:visited{
+    color: inherit;
+}
+
