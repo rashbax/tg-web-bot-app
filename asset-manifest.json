@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/tg-web-bot-app/static/css/main.b89a8970.css",
+    "main.js": "/tg-web-bot-app/static/js/main.e804244c.js",
+    "static/media/burg.jpg": "/tg-web-bot-app/static/media/burg.1f2db14e211d2d8c0527.jpg",
+    "static/media/pizza2.svg": "/tg-web-bot-app/static/media/pizza2.be1c264cacd1b7e19be5bf7b87cfde60.svg",
+    "static/media/burger4.svg": "/tg-web-bot-app/static/media/burger4.5e9bd74bea242fdebabeb09fe21b899f.svg",
+    "index.html": "/tg-web-bot-app/index.html",
+    "main.b89a8970.css.map": "/tg-web-bot-app/static/css/main.b89a8970.css.map",
+    "main.e804244c.js.map": "/tg-web-bot-app/static/js/main.e804244c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b89a8970.css",
+    "static/js/main.e804244c.js"
+  ]
+}
