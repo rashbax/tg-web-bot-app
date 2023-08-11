@@ -11,6 +11,7 @@ import SignIn from './pages/Auth/SignIn';
 import SignUp from './pages/Auth/SignUp';
 import GetPass from './pages/Auth/GetPass';
 import useTelegram from './hooks/useTelegram'
+import { useEffect } from 'react';
 
 function App() {
   const {tg} = useTelegram()
