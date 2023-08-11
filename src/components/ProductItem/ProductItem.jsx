@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react'
 import './ProductItem.css'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { increase, decrease } from '../../app/appSlice/appSlice'
 import useCart from '../../hooks/useCart'
 import burg from '../../assets/burg.jpg'

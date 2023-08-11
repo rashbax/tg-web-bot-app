@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '../../components/Header/Header'
 import ConfInput from '../../components/ConfInput/ConfInput'
 import ConfButton from '../../components/ConfButton/ConfButton'
 import { ArrowForwardIos } from '@mui/icons-material'
