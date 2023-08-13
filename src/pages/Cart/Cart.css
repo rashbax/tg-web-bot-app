@@ -4,11 +4,13 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    
 }
 
 .Cart__main{
     flex: 1 1 auto;
     margin-top: 25px;
+    margin-bottom: 100px;
 }
 
 .Cart__item{
@@ -87,7 +89,7 @@ color:  #010E3880;
 
 .Cart__check{
     position: sticky;
-    bottom: 70px;
+    bottom: 69px;
     left: 0;
     right: 0;
     z-index: 9999999;

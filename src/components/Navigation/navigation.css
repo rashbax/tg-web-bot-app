@@ -7,7 +7,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    
 }
 
 .navigation__container{
@@ -29,11 +28,12 @@
     transform: scale(1.1);
 }
 .navigation__img{
-    width: 24px;
-    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
     color:  #C4C4C4;
     
 }
+
 .navigation__col.active .navigation__img{
     color: #17975C !important;
 }

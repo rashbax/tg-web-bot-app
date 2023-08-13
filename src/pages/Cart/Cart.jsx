@@ -4,7 +4,8 @@ import './Cart.css'
 import Header from '../../components/Header/Header'
 import { useSelector } from 'react-redux'
 import CartItem from './CartItem'
-import { AddShoppingCartOutlined } from '@mui/icons-material'
+import { AddShoppingCartOutlined, Favorite, Restore } from '@mui/icons-material'
+import { BottomNavigation, BottomNavigationAction, Paper } from '@mui/material'
 
 
 

@@ -1,7 +1,7 @@
 /* Foods */
 .foods__container{
     /* width: 90%; */
-    margin: 0 auto;
+    margin: 0 auto 100px auto;
 }
 .foods__head{
     display: flex;
