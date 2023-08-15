@@ -21,6 +21,7 @@ function App() {
   
   return (
     <div className="App">
+      <div className='container'>
       <Routes>
       <Route path='/sign-in' element={<SignIn/>}/>
       <Route path='/get-password' element={<GetPass/>}/>
@@ -32,6 +33,7 @@ function App() {
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/account' element={<Account/>}/>
       </Routes>
+      </div>
     </div>
   );
 }

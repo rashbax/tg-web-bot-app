@@ -3,7 +3,7 @@ import './ProductItem.css'
 import { useDispatch } from 'react-redux'
 import { increase, decrease } from '../../app/appSlice/appSlice'
 import useCart from '../../hooks/useCart'
-import burg from '../../assets/burg.jpg'
+import peperoni from '../../assets/peperoni.png'
 
 
 export default function ProductItem({product, onAdd}) {
@@ -23,7 +23,7 @@ let count = useCart(product.id)
   return (
     <div className='productItem'>
        <div className="productItem-img">
-        <img src={burg} alt="burger"  />
+        <img src={peperoni} alt="burger"  />
               <div className="productItem-price">{product?.price} <span>sum</span></div>
         </div>
         <div className="productitem-body">
