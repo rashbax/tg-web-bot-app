@@ -22,7 +22,8 @@
 height: 73px;
 border-radius: 5px;
 border: none;
-background-color: #E9E9EA;
+/* background-color: #E9E9EA; */
+background-color: var(--tg-theme-secondary-bg-color);
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -44,8 +45,7 @@ margin-top: 20px;
 .Account__main-text p{
 font-size: 14px;
 font-weight: 400;
-line-height: 17px;
-color:  #010E3880;
+line-height: 17px;;
 }
 .Account__main-right{
     width: 20px;
