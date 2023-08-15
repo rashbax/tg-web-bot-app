@@ -22,8 +22,7 @@
 height: 73px;
 border-radius: 5px;
 border: none;
-/* background-color: #E9E9EA; */
-background-color: var(--tg-theme-secondary-bg-color);
+background-color: #E9E9EA;
 display: flex;
 justify-content: space-between;
 align-items: center;

@@ -69,8 +69,7 @@
     font-size: 13px;
 }
 .productItem-footer button{
-    /* background-color: #E9E9EA; */
-    background-color:  rgb(241 244 246/var(--tw-bg-opacity));
+    background-color: #E9E9EA;
     display: inline-block;
     padding: 9px 18px;
     cursor: pointer;

@@ -1,8 +1,7 @@
 .navigation{
     width: 100%;
     height: 70px;
-    /* background: #F1F1F1; */
-    background-color: var(--tg-theme-secondary-bg-color);
+    background: #F1F1F1;
     z-index: 99;
     position: fixed;
     bottom: 0;
@@ -31,14 +30,12 @@
 .navigation__img{
     min-width: 24px;
     min-height: 24px;
-    /* color:  #C4C4C4; */
-    color: var(--tg-theme-hint-color);
+    color:  #C4C4C4;
     
 }
 
 .navigation__col.active .navigation__img{
-    /* color: #17975C !important; */
-    color: var(--tg-theme-secondary-bg-color);
+    color: #17975C !important;
 }
 
 .navigation__text{
@@ -52,13 +49,11 @@ text-align: center;
 
 .badge span{
     font-size: 9px;
-    /* background-color: #000; */
-    background-color: var(--tg-theme-secondary-bg-color);
+    background-color: #000;
     min-width: 17px;
     padding: 0;
     height: 17px;
     line-height: normal;
     border-radius: 50%;
-    /* color: #ffffff !important; */
-    color: var(--tg-theme-text-color);
+    color: #ffffff !important;
 }

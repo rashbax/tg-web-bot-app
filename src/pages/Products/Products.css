@@ -40,13 +40,10 @@ color: inherit;
     display: inline-block;
     padding: 7px 15px;
     border-radius: 20px;
-    /* color: #616176; */
-    color: var(--tg-theme-hint-color);
+    color: #616176;
 }
 
 .active{
-    /* background-color: #F1F1F6; */
-    background-color: var(--tg-theme-secondary-bg-color);
-    /* color: #0C0C1B; */
-    color: var(--tg-theme-text-color);
+    background-color: #F1F1F6;
+    color: #0C0C1B;
 }
