@@ -30,7 +30,7 @@ const onDeleteHandler = useCallback(()=> {
                 <div className="Cart__item-row">
                   <div className="Cart__item-left">
                     <div className="Cart__item-img">
-                    <img src={Assets[el.product.id -1]} alt="" srcset="" />
+                    <img src={Assets[el.product.id -1]} alt="img"  />
                     </div>
                     
                   </div>

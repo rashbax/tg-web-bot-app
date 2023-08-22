@@ -7,7 +7,7 @@ import { setIsVisible } from '../../app/ModalVisible/modalSlice'
 import { useModalContext } from '../../app/ModalContext/ModalContext'
 
 
-export default function MainModal({children, visible, setVisible}) {
+export default function MainModal({children}) {
   let isVisible = useSelector(state => state.modal.isVisible)
  const dispatch = useDispatch()
  const {countOfProduct,setCountOfProduct} = useModalContext()

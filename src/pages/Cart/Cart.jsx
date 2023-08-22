@@ -51,6 +51,8 @@ let priceOfAll = cartItems.reduce((acc, val) => {
         ) 
         }
       </div>
+      
+      <div className="Cart__footer">
       {cartItems.length 
       ?
        (
@@ -70,6 +72,7 @@ let priceOfAll = cartItems.reduce((acc, val) => {
       null
     }
       <Navigation/>
+      </div>
     </div>
   )
 }
