@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navigation from '../../components/Navigation/Navigation'
 import './Cart.css'
 import Header from '../../components/Header/Header'
@@ -6,10 +6,12 @@ import { useSelector } from 'react-redux'
 import CartItem from './CartItem'
 import { AddShoppingCartOutlined, Favorite, Restore } from '@mui/icons-material'
 import { BottomNavigation, BottomNavigationAction, Paper } from '@mui/material'
+import MainModal from '../../components/Modal/MainModal'
 
 
 
 export default function Cart() {
+  const [visible, setVisible] = useState(false)
 
  const cartItems = useSelector(state => state.app.cart)
  console.log(cartItems);
@@ -43,6 +45,7 @@ let priceOfAll = cartItems.reduce((acc, val) => {
             <div className="noOrder__text">Hit the orange button down
   below to Create an order</div>
           </div>
+          
         </div>
       </div>
         ) 

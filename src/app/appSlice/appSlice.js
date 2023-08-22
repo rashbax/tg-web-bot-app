@@ -9,7 +9,10 @@ export const appSlice = createSlice({
     initialState,
     reducers: {
       increase: (state, action) =>{
-        const product = action.payload
+        const product = action.payload.data
+        console.log(product.id);
+        let countOfProduct =  action.payload.count
+        
         const contains = state.cart.find((item) => item.product.id === product.id);
 
         if(contains){
@@ -17,7 +20,7 @@ export const appSlice = createSlice({
           item.product.id === product.id
           ?
           {...item,
-            count: item.count +1
+            count: item.count + countOfProduct
           }
           :
           item
@@ -26,7 +29,7 @@ export const appSlice = createSlice({
         } else {
           state.cart = [
             ...state.cart, {product:product,
-            count: 1
+            count: countOfProduct
             }
           ]
         }

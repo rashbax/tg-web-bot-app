@@ -16,18 +16,25 @@
 .mainModal__content{
     padding: 25px;
     background: #fff;
-    min-width: 250px;
+    /* min-width: 250px; */
+    width: 28rem;
     border-radius: 32px 32px 0px 0px;
-    max-width: 100%;
-    min-width: 100%;
+    /* max-width: 100%; */
+    /* min-width: 100%; */
     margin: 0 auto;
     /* bottom: 0;
     position: absolute;
     right: 0;
     left:0; */
+    position: relative;
+    
+}
+.mainModal__content__container{
+    padding: 0 1rem;
     display: flex;
     justify-content: center;
-    position: relative;
+    align-items: center;
+    
 }
 
 .modal__rectangle{

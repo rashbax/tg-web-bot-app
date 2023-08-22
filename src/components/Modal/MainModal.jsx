@@ -2,23 +2,41 @@ import React, { useState } from 'react'
 // import Modal from 'react-modal'
 import cl from './Modal.module.css'
 import './m.css'
+import { useDispatch, useSelector } from 'react-redux'
+import { setIsVisible } from '../../app/ModalVisible/modalSlice'
+import { useModalContext } from '../../app/ModalContext/ModalContext'
 
 
 export default function MainModal({children, visible, setVisible}) {
+  let isVisible = useSelector(state => state.modal.isVisible)
+ const dispatch = useDispatch()
+ const {countOfProduct,setCountOfProduct} = useModalContext()
 
   const rootClasses = [cl.mainModal]
 
-  if(visible){
+  if(isVisible){
     rootClasses.push(cl.active)
+  } 
+  
+  if(countOfProduct <= 0){
+    dispatch(setIsVisible(false))
+  }
+
+  const closeModalHandler = () => {
+    dispatch(setIsVisible(false))
+    setCountOfProduct(0)
   }
     
   
   return (
-    <div className={rootClasses.join(' ')} onClick={()=> setVisible(false)}>
+    <div className={rootClasses.join(' ')} onClick={closeModalHandler}>
       
       <div className={cl.mainModal__content} onClick={(e)=> e.stopPropagation()}>
-      <div className={cl.modal__rectangle}></div>
-        {children}
+        <div className={cl.mainModal__content__container}>
+          <div className={cl.modal__rectangle}></div>
+          {children}
+        </div>
+      
       </div>
     </div>
   //   <div class="app-container">

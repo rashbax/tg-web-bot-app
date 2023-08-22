@@ -47,7 +47,7 @@
  justify-content: space-between;
  align-items: center;
  position: relative;
- margin-bottom: 8px;
+ margin-bottom: 10px;
  width: 80%;
  align-self: center;
 }
@@ -72,7 +72,7 @@
 .productItem-subtitle{
     font-size: 13px;
 }
-.productItem-footer button{
+.productItem__footer-button{
     background-color: #E9E9EA;
     display: inline-block;
     padding: 9px 18px;
@@ -81,4 +81,5 @@
     border: none;
     height: 100%;
     transition: .3s ease-in;
+    width: 100%;
 }
