@@ -61,7 +61,7 @@ export default function Main() {
               <div className="main__modal-subtitle">{data?.description}</div>
             </div>
             <div className="main__modal-img">
-              <img src={Assets[data.id -1]} alt='img'/>
+              <img src={Assets[data?.id -1]} alt='img'/>
             </div>
             <div className="main__modal-footer">
               <div className="main__modal-footer__head">
