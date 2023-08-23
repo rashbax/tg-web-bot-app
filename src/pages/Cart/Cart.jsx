@@ -47,6 +47,7 @@ let priceOfAll = cartItems.reduce((acc, val) => {
           </div>
           
         </div>
+        
       </div>
         ) 
         }
@@ -71,6 +72,7 @@ let priceOfAll = cartItems.reduce((acc, val) => {
       :
       null
     }
+    
       <Navigation/>
       </div>
     </div>

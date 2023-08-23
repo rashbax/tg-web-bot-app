@@ -21,16 +21,18 @@ export default function Foods() {
   return (
     <div>
       <div className="foods__container">
+      
         <div className="foods__body">
           <div className="food__sort">
-            <ScrollLink 
+           <div className="food__sort-row">
+           <ScrollLink 
             spy={true} 
             className='food__link' 
             activeClass="active" 
             to='burgers' 
             smooth={true} 
             duration={500} 
-            offset={-500}>
+            offset={-270}>
               Burger
             </ScrollLink>
             <ScrollLink 
@@ -93,6 +95,7 @@ export default function Foods() {
             offset={-50}>
               HotDog
             </ScrollLink>
+           </div>
           </div>
           <div className="foods__products">
             <ProductList name={'burgers'} products={products}/>

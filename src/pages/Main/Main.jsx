@@ -1,14 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Main.css'
 import food from '../../assets/pizza2.svg'
 import Navigation from '../../components/Navigation/Navigation'
 import Foods from '../Products/Foods'
 import Logo from '../../components/Logo/Logo'
 import MainModal from '../../components/Modal/MainModal'
-import ModalProvider, { useModalContext } from '../../app/ModalContext/ModalContext'
+import { useModalContext } from '../../app/ModalContext/ModalContext'
 import ConfButton from '../../components/ConfButton/ConfButton'
-import { ShoppingBag } from '@mui/icons-material'
-import img from '../../assets/burger2.png'
+import { AddShoppingCartOutlined} from '@mui/icons-material'
 import { useDispatch } from 'react-redux'
 import { increase } from '../../app/appSlice/appSlice'
 import { setIsVisible } from '../../app/ModalVisible/modalSlice'
@@ -24,10 +23,10 @@ export default function Main() {
 
   const dispatch = useDispatch()
 
-  const confirmHandler = async() => {
-    await dispatch(increase( {count:countOfProduct, data: data}))
-    await setCountOfProduct(0)
-    await dispatch(setIsVisible(false))
+  const confirmHandler = () => {
+     dispatch(increase( {count:countOfProduct, data: data}))
+     setCountOfProduct(0)
+     dispatch(setIsVisible(false))
   }
 
   return (
@@ -50,11 +49,12 @@ export default function Main() {
         <Foods/>
         </main>
         
-          
-        
         </div>
-        <Navigation/>
-        <MainModal>
+        {
+          countOfProduct <= 0 ?
+          <Navigation/>
+          :
+          <MainModal>
           <div className="main__modal-container">
             <div className="main__modal-header">
               <div className="main__modal-title">{data?.title}</div>
@@ -74,12 +74,15 @@ export default function Main() {
                 </div>
               </div>
               <ConfButton onClick={confirmHandler}>
-                <ShoppingBag/>
+                <AddShoppingCartOutlined/>
                 <span>Savatchaga qo'shish</span>
               </ConfButton>
             </div>
           </div>
         </MainModal>
+        }
+        
+        
     </div>
 
   )
