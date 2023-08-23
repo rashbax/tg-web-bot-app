@@ -20,9 +20,9 @@ color: inherit;
 } */
 
 .food__sort{
-   
+    margin-left: -5px;
     background-color: #fff;
-    width: 100%;
+    width: 105%;
     position: sticky;
     top: 0;
     left: 0;
@@ -45,6 +45,7 @@ color: inherit;
     font-weight: 700;
     width: 100%;
     height: 100%;
+    padding: 0 0.5rem;
 }
 
 .food__link{
