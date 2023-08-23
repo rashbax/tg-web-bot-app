@@ -22,6 +22,7 @@ color: inherit;
 .food__sort{
    
     background-color: #fff;
+    width: 120%;
     position: sticky;
     top: 0;
     left: 0;
