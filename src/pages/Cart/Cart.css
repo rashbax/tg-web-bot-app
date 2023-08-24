@@ -107,7 +107,7 @@ color:  #010E3880;
 
 .Cart__check{
     position: fixed;
-    bottom: 69px;
+    bottom: 66px;
     z-index: 9999999;
     background-color: #ffff;
     width: 100%;
@@ -116,7 +116,7 @@ color:  #010E3880;
 .Cart__check-row{
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding:10px 15px;
     align-items: center;
 }
 
