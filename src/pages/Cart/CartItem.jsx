@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux'
 import { decrease, increase, remove } from '../../app/appSlice/appSlice'
 import { useCallback } from 'react'
 import './Cart.css'
-import { Close } from '@mui/icons-material'
+import { Add, Close, Remove } from '@mui/icons-material'
 import Assets from '../../assets/assest'
 
 export default function CartItem({el}) {
@@ -40,9 +40,9 @@ const onDeleteHandler = useCallback(()=> {
                       <div className="Cart__item-subtitle">{el.product.price}</div>
                     </div>
                     <div className="Cart__item-bottom">
-                      <button className="Cart__item-button" onClick={onRemoveHandler}>-</button>
+                      <button className="Cart__item-button" onClick={onRemoveHandler}><Remove/></button>
                       <div className="Cart__item-count">{count}</div>
-                      <button className="Cart__item-button" onClick={onAddHandler}>+</button>
+                      <button className="Cart__item-button" onClick={onAddHandler}><Add/></button>
                     </div>
                   </div>
                 </div>

@@ -40,7 +40,7 @@
 }
 
 .Cart__item-left{
-    flex: 0 1 33.333%;
+    flex: 0 1 35%;
     height: 100%;
     max-width: 100%;
 }
@@ -78,7 +78,7 @@ color:  #010E3880;
 ;
 }
 .Cart__item-count{
-    width: 2rem;
+    width: 1rem;
     text-align: center;
 }
 
@@ -116,7 +116,7 @@ color:  #010E3880;
 .Cart__check-row{
     display: flex;
     justify-content: space-between;
-    padding: 7px 15px;
+    padding: 15px;
     align-items: center;
 }
 
@@ -134,8 +134,8 @@ color:  #010E3880;
     border-radius: 16px;
     background-color: #17975C;
     border: none;
-    height: 25px;
-    min-width: 100px;
+    height: 32px;
+    min-width: 120px;
     font-weight: 500;
     color: #ffff;
     cursor: pointer;

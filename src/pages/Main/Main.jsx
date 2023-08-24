@@ -7,7 +7,7 @@ import Logo from '../../components/Logo/Logo'
 import MainModal from '../../components/Modal/MainModal'
 import { useModalContext } from '../../app/ModalContext/ModalContext'
 import ConfButton from '../../components/ConfButton/ConfButton'
-import { AddShoppingCartOutlined} from '@mui/icons-material'
+import { Add, AddShoppingCartOutlined, Remove} from '@mui/icons-material'
 import { useDispatch } from 'react-redux'
 import { increase } from '../../app/appSlice/appSlice'
 import { setIsVisible } from '../../app/ModalVisible/modalSlice'
@@ -68,9 +68,9 @@ export default function Main() {
                 <div className="main__modal-footer__price">{data?.price * countOfProduct} so'm</div>
                 <div className="main__modal-footer__buttons">
                   <button disabled={countOfProduct <= 0 ? true : false} className={countOfProduct <=0 ? 'disabled' : ''} 
-                  onClick={()=> setCountOfProduct(countOfProduct -1)}>-</button>
+                  onClick={()=> setCountOfProduct(countOfProduct -1)}><Remove/></button>
                   <div className='main__modal-count'>{countOfProduct}</div>
-                  <button onClick={()=> setCountOfProduct(countOfProduct+1)}>+</button>
+                  <button onClick={()=> setCountOfProduct(countOfProduct+1)}><Add/></button>
                 </div>
               </div>
               <ConfButton onClick={confirmHandler}>
