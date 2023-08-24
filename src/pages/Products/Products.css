@@ -55,7 +55,9 @@ color: inherit;
     color: #616176;
 }
 
-.active{
-    background-color: #F1F1F6;
-    color: #0C0C1B;
+.food__link.active{
+    /* background-color: #F1F1F6;
+    color: #0C0C1B; */
+    background-color: #000;
+    color: #fff;
 }

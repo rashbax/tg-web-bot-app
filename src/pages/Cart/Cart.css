@@ -77,6 +77,10 @@ line-height: 27px;
 color:  #010E3880;
 ;
 }
+.Cart__item-count{
+    width: 2rem;
+    text-align: center;
+}
 
 .Cart__item-bottom{
     display: flex;
@@ -87,13 +91,19 @@ color:  #010E3880;
     background-color: #ffff;
     margin: 0 10px;
     display: inline-block;
-    height: 3rem;
-    width: 3rem;
+    height: 3.5rem;
+    width: 3.5rem;
     cursor: pointer;
     border-radius: 50%;
     border: none;
     transition: .3s ease-in;
 }
+
+/* .Cart__item-button::{
+    background-color: #ffffff77;
+    transition: all .8s;
+
+} */
 
 .Cart__check{
     position: fixed;
